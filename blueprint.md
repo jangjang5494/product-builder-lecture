@@ -3,14 +3,15 @@
 
 ## Overview
 
-This project is a simple, visually appealing Lotto Number Generator web application. It allows users to generate six unique random numbers between 1 and 45 with a single button click. The application is built using modern HTML, CSS, and JavaScript, focusing on a clean user interface and a smooth user experience.
+This project is a simple, visually appealing Lotto Number Generator web application. It allows users to generate six unique random numbers between 1 and 45 with a single button click. The application is built using modern HTML, CSS, and JavaScript, focusing on a clean user interface and a smooth user experience. It also features a dark and light mode toggle.
 
 ## Project Details
 
 ### Style & Design
 
 *   **Layout:** Centered, responsive container using Flexbox.
-*   **Color Palette:** A gradient background from a deep blue (`#667eea`) to a purplish tone (`#764ba2`), with white text and vibrant red accents (`#ff6b6b`) for the button.
+*   **Color Palette (Light Mode):** A gradient background from a deep blue (`#667eea`) to a purplish tone (`#764ba2`), with white text and vibrant red accents (`#ff6b6b`) for the button.
+*   **Color Palette (Dark Mode):** A darker theme with a near-black background and adjusted text/accent colors for comfortable viewing in low-light environments.
 *   **Typography:** 'Poppins' font from Google Fonts for a clean and modern look.
 *   **Effects:**
     *   A "glassmorphism" effect on the main container using `backdrop-filter: blur(10px)`.
@@ -24,6 +25,7 @@ This project is a simple, visually appealing Lotto Number Generator web applicat
 *   **Random Number Generation:** Generates 6 unique numbers from 1 to 45.
 *   **Interactive Button:** A clear call-to-action button to trigger the number generation.
 *   **Dynamic Display:** The generated numbers are dynamically inserted into the designated number divs on the page.
+*   **Dark/Light Mode Toggle:** A switch or button to toggle between color schemes.
 
 ## Deployment Plan (GitHub)
 
@@ -32,3 +34,4 @@ This project is a simple, visually appealing Lotto Number Generator web applicat
 3.  **GitHub Repository Creation:** Guide the user to create a new, empty repository on their GitHub account.
 4.  **Remote Connection:** Connect the local repository to the remote GitHub repository.
 5.  **Push to GitHub:** Push the initial commit to the `main` branch on GitHub.
+6.  **GitHub Pages:** Configure the repository to deploy the `main` branch using GitHub Pages.
