@@ -37,6 +37,42 @@ const toggleTheme = (e) => {
 
 themeSwitch.addEventListener('change', toggleTheme);
 
+// Contact Form Submission
+const form = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    try {
+        const response = await fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        if (response.ok) {
+            formStatus.textContent = "Thanks for your submission!";
+            formStatus.style.color = "#28a745"; // Green for success
+            form.reset();
+        } else {
+            const responseData = await response.json();
+            if (Object.hasOwn(responseData, 'errors')) {
+              formStatus.textContent = responseData["errors"].map(error => error["message"]).join(", ");
+            } else {
+              formStatus.textContent = "Oops! There was a problem submitting your form";
+            }
+            formStatus.style.color = "#dc3545"; // Red for error
+        }
+    } catch (error) {
+        formStatus.textContent = "Oops! There was a problem submitting your form";
+        formStatus.style.color = "#dc3545";
+    }
+}
+form.addEventListener("submit", handleSubmit)
+
+
 // Check for saved theme preference on load
 document.addEventListener('DOMContentLoaded', () => {
     const isDarkMode = localStorage.getItem('isDarkMode') === 'true';

@@ -3,7 +3,7 @@
 
 ## Overview
 
-This project is a simple, visually appealing Lotto Number Generator web application. It allows users to generate six unique random numbers between 1 and 45 with a single button click. The application is built using modern HTML, CSS, and JavaScript, focusing on a clean user interface and a smooth user experience. It also features a dark and light mode toggle.
+This project is a simple, visually appealing Lotto Number Generator web application. It allows users to generate six unique random numbers between 1 and 45 with a single button click. The application is built using modern HTML, CSS, and JavaScript, focusing on a clean user interface and a smooth user experience. It also features a dark and light mode toggle and a contact form for inquiries.
 
 ## Project Details
 
@@ -26,6 +26,14 @@ This project is a simple, visually appealing Lotto Number Generator web applicat
 *   **Interactive Button:** A clear call-to-action button to trigger the number generation.
 *   **Dynamic Display:** The generated numbers are dynamically inserted into the designated number divs on the page.
 *   **Dark/Light Mode Toggle:** A switch or button to toggle between color schemes.
+*   **Contact Form:** A form for users to send partnership inquiries via Formspree.
+
+## Current Task: Add Contact Form
+
+1.  **Update `blueprint.md`**: Add the new feature specification.
+2.  **Modify `index.html`**: Add a new section containing the contact form. The form will point to the provided Formspree URL.
+3.  **Modify `style.css`**: Add styles for the contact form to match the application's aesthetic.
+4.  **Modify `main.js`**: Add JavaScript to handle the form submission via AJAX, showing a success/error message without a page reload.
 
 ## Deployment Plan (GitHub)
 
